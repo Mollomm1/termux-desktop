@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/python
+#!/files/usr/bin/python3
 
 # al-kb: a script to read openbox's rc.xml and write out the keybinds
 # Copyright (C) 2010 wlourf
