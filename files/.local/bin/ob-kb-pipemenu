@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/usr/bin/bash
 
 # al-kb-pipemenu - an Openbox pipemenu for displaying keybinds
 # Copyright (C) 2015 damo <damo@bunsenlabs.org>
@@ -25,11 +25,6 @@ it will output an xml openbox pipemenu for displaying keybindings.
 case "$@" in
     -h|--help) echo -e "$HELP" ; exit 0
 esac
-
-if ! . "/data/data/com.termux/files/home/.local/lib/termux-ob/common/al-include.cfg" 2> /dev/null; then
-    echo $"Error: Failed to locate /data/data/com.termux/files/home/.local/lib/termux-ob/common/al-include.cfg" >&2
-    exit 1
-fi
 
 if ! type "$KBSCRIPT" &>/dev/null; then
     menuStart
